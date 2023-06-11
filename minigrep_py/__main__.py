@@ -1,4 +1,4 @@
-from .parser import ArgumentParser
+from . import ArgumentParser
 
 
 def main() -> None:
