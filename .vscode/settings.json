@@ -9,5 +9,6 @@
     "python.analysis.addImport.exactMatchOnly": true,
     "python.linting.lintOnSave": true,
     "python.linting.mypyPath": ".venv/bin/mypy",
-    "python.linting.mypyEnabled": true
+    "python.linting.mypyEnabled": true,
+    "python.terminal.activateEnvironment": false
 }
