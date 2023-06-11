@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "minigrep-py"
+version = "0.1.0"
+description = ""
+authors = ["H1rono <hronok66@gmail.com>"]
+readme = "README.md"
+packages = [{include = "minigrep_py"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
