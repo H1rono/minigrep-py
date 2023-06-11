@@ -23,5 +23,5 @@ class ArgumentParser:
             help="pattern(s) of regular expression to search for",
         )
 
-    def parse_args(self) -> Args:
-        return self.__parser.parse_args(namespace=Args())
+    def parse_args(self, args: Optional[list[str]] = None) -> Args:
+        return self.__parser.parse_args(args, namespace=Args())
