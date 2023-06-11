@@ -10,5 +10,6 @@
     "python.linting.lintOnSave": true,
     "python.linting.mypyPath": ".venv/bin/mypy",
     "python.linting.mypyEnabled": true,
-    "python.terminal.activateEnvironment": false
+    "python.terminal.activateEnvironment": false,
+    "isort.check": true
 }
