@@ -11,5 +11,10 @@
     "python.linting.mypyPath": ".venv/bin/mypy",
     "python.linting.mypyEnabled": true,
     "python.terminal.activateEnvironment": false,
-    "isort.check": true
+    "isort.check": true,
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    }
 }
