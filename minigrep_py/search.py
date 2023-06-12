@@ -1,8 +1,7 @@
 # Standard Library
 import re
 from dataclasses import dataclass
-from io import TextIOBase
-from typing import Self
+from typing import Self, TextIO
 
 
 @dataclass
@@ -11,7 +10,7 @@ class SearchConfig:
     input: str
 
     @classmethod
-    def new(cls, patterns: list[str], input: TextIOBase) -> Self:
+    def new(cls, patterns: list[str], input: TextIO) -> Self:
         pats = [re.compile(pat) for pat in patterns]
         return cls(pats, input.read())
 
@@ -32,5 +31,5 @@ class Search:
         ]
 
     @classmethod
-    def new(cls, patterns: list[str], input: TextIOBase) -> Self:
+    def new(cls, patterns: list[str], input: TextIO) -> Self:
         return cls(cls.Config.new(patterns, input))
