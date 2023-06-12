@@ -12,6 +12,8 @@ class Args:
 class ArgumentParser:
     __slots__ = ("__parser",)
 
+    Namespace = Args
+
     def __init__(self) -> None:
         self.__parser = argparse.ArgumentParser(
             description="minimal grep implementation in python",
